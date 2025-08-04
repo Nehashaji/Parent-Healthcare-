@@ -56,13 +56,16 @@ body {
 }
 
 .nav-links li a {
-    position: relative;
-    text-decoration: none;
-    color: #1b3e2a;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 5px 0;
-    transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  text-decoration: none;
+  color: #1b3e2a;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 0;
+  transition: all 0.4s ease;
 }
 
 .nav-links li a::after {
@@ -84,6 +87,79 @@ body {
 .nav-links li a:hover::after {
     width: 100%;
 }
+
+/* Dropdown */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff8e7;
+  padding: 15px 0;
+  width: 220px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  animation: dropdownFade 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li {
+  list-style: none;
+}
+
+.dropdown-menu li a {
+  color: #1b3e2a;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: 'Playfair Display', serif;
+}
+
+.dropdown-menu li a:hover {
+  background: #bfa7601c;
+  color: #bfa760;
+}
+
+/* Chevron icon style */
+.nav-links .dropdown i {
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+.nav-links .dropdown:hover i {
+  transform: rotate(180deg);
+}
+
+/* Dropdown animation */
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Hero Section with video */
 .hero {
