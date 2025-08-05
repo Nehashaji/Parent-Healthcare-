@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book an Appointment</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="appointment.css"/>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.png" alt="Parents Healthcare Logo" />
+      <span>Parents Healthcare</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="About.html">ABOUT US</a></li>
+      <li class="dropdown">
+        <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+          <li><a href="treatments.html">Our Treatments</a></li>
+          <li><a href="special.html">Special Treatments</a></li>
+          <li><a href="Packages.html">Special Packages</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="overlay"></div>
+    <div class="hero-text" data-aos="fade-up" data-aos-duration="1200">
+      <h1>Book Your Personalized Ayurvedic Experience with the Touch of Luxury.</h1>
+      <p>Indulge in exclusive wellness therapies that blend ancient wisdom with modern elegance for exceptional care.</p>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <main>
+    <section class="appointment-section">
+      <div class="form-container">
+        <h2 class="section-title">Book an Appointment</h2>
+        <form class="appointment-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" placeholder="Enter your first name" required>
+              <span class="error-msg">The field is required.</span>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" placeholder="Enter your last name" required>
+              <span class="error-msg">The field is required.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+              <span class="error-msg">The field is required.</span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number" required>
+              <span class="error-msg">The field is required.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="services">Services</label>
+              <select id="services" required>
+                <option value="" disabled selected>Select a service</option>
+                <option>Doctor consultation</option>
+                <option>Wellness treatment</option>
+              </select>
+              <span class="error-msg">The field is required.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" required>
+                <option value="" disabled selected>Select gender</option>
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+              <span class="error-msg">The field is required.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Appointment Date</label>
+              <input type="date" id="date" required>
+              <span class="error-msg">The field is required.</span>
+            </div>
+            <div class="form-group">
+              <label for="time">Appointment Time</label>
+              <input type="time" id="time" required>
+              <span class="error-msg">The field is required.</span>
+            </div>
+          </div>
+
+          <div class="form-group full">
+            <label for="description">Description</label>
+            <textarea id="description" rows="4" placeholder="Mention any specific concerns, symptoms, preferences, or areas you'd like us to focus on..."></textarea>
+          </div>
+
+          <div class="submit-btn">
+            <button type="submit">Confirm Appointment</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="logo.png" alt="Parents Healthcare Logo" />
+        <p>Parents Healthcare</p>
+      </div>
+      <div class="footer-center">
+        <p>
+          © 2025 Parents Healthcare. All rights reserved.<br />
+          Powered by AyurMinar Kottakkal Ayurvedic Center
+        </p>
+      </div>
+      <div class="footer-right">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

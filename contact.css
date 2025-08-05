@@ -1,20 +1,24 @@
-/* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* contact.css - Luxury Ayurvedic Contact page (updated horizontal card) */
+:root{
+  --ivory:#f9f6f0;
+  --deep:#1b3e2a;
+  --muted:#6b6b6b;
+  --gold:#bfa760;
+  --card:#ffffff;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #2d2d2d;
-    overflow-x: hidden;
-    background: #FFFFF0;
-    line-height: 1.6;
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--ivory);
+  color:var(--deep);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
 }
+
 
 /* Navbar */
 .navbar {
@@ -162,7 +166,7 @@ body {
 
 /* Hero Section */
 .about-hero {
-  background: url('Images/treatment.png') center/cover no-repeat;
+  background: url('Images/about-hero.png') center/cover no-repeat;
   position: relative;
   height: 60vh;
   display: flex;
@@ -201,203 +205,65 @@ body {
   margin: 0 auto;
 }
 
-.treatment-section {
-  background: #fffaf0;
-  padding: 80px 20px;
-  font-family: 'Georgia', serif;
+/* MAIN wrapper */
+.contact-main{max-width:1200px;margin:0 auto;padding:28px 20px 80px}
+
+/* TOP card - horizontal two columns */
+.contact-top{
+  display:grid;
+  gap:20px;
+  grid-template-columns:1fr 1fr;
+  align-items:start;
+  margin-bottom:26px;
 }
 
-.treatment-section h2 {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  color: #1b3e2a;
-  font-size: 40px;
-  margin-bottom: 15px;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+/* left info column */
+.contact-info{
+  background:var(--card);
+  border-radius:12px;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(27,62,42,0.06);
+  border:1px solid rgba(0,0,0,0.04);
 }
+.contact-info h2{font-family:'Playfair Display',serif;margin-bottom:6px}
+.contact-info .lead{color:var(--muted);margin-bottom:12px}
 
-.treatment-section p {
-  text-align: center;
-  max-width: 720px;
-  margin: 0 auto 60px;
-  font-size: 19px;
-  color: #6b6b6b;
-  font-weight: 500;
-  line-height: 1.6;
-}
+/* info rows */
+.info-list{display:flex;flex-direction:column;gap:12px}
+.info-row{display:flex;gap:12px;align-items:flex-start}
+.info-row i{font-size:20px;color:var(--gold);width:44px;height:44px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(180deg, rgba(191,167,96,0.12), rgba(191,167,96,0.06))}
+.info-text h4{font-size:14px;margin-bottom:4px}
+.info-text p{font-size:14px;color:var(--muted);margin:0}
 
-.treatment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+/* quick actions */
+.quick-actions{display:flex;gap:12px;margin-top:14px}
+.action-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:var(--deep);color:#fff;text-decoration:none;font-weight:600}
+.action-btn.outline{background:#fff;color:var(--deep);border:1px solid rgba(0,0,0,0.06)}
 
-.treatment-card {
-  background: #fff;
-  border-radius: 25px;
-  box-shadow: 0 15px 30px rgba(27, 62, 42, 0.15);
-  padding: 30px 25px 35px;
-  border: 2px solid #bfa760;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+/* right form column */
+.contact-form-wrap .form-card{
+  background:var(--card);border-radius:12px;padding:18px;box-shadow:0 10px 30px rgba(27,62,42,0.06);border:1px solid rgba(0,0,0,0.04)
 }
+.form-card h2{font-family:'Playfair Display',serif;margin-bottom:10px}
+.form-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.form-field{flex:1;display:flex;flex-direction:column}
+.form-field.full{flex-basis:100%}
+label{font-size:13px;margin-bottom:6px;font-weight:600}
+input,textarea,select{
+  padding:10px 12px;border-radius:8px;border:1px solid rgba(0,0,0,0.08);font-size:14px;background:transparent;color:var(--deep)
+}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--gold);box-shadow:0 6px 20px rgba(191,167,96,0.08)}
+textarea{min-height:100px;resize:vertical}
 
-.treatment-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 30px 50px rgba(27, 62, 42, 0.3);
-  border-color: #17402e;
-}
+/* submit area */
+.submit-row{display:flex;align-items:center;gap:14px}
+.btn-primary{background:var(--deep);color:#fff;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+.form-note{color:var(--muted);font-size:13px}
 
-.treatment-card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 5px 15px rgba(191, 167, 96, 0.35);
-  transition: transform 0.4s ease;
-}
-
-.treatment-card:hover img {
-  transform: scale(1.05);
-}
-
-.treatment-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  color: #1b3e2a;
-  margin-bottom: 6px;
-  letter-spacing: 0.8px;
-}
-
-.treatment-card h4 {
-  font-size: 17px;
-  color: #bfa760;
-  margin-bottom: 15px;
-  font-weight: 600;
-  font-style: italic;
-}
-
-.treatment-card ul {
-  list-style-type: square;
-  padding-left: 20px;
-  color: #555555;
-  font-size: 15.5px;
-  line-height: 1.6;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
-.treatment-card ul li {
-  margin-bottom: 8px;
-}
-
-.treatment-card .extra-info {
-  color: #6b6b6b;
-  font-size: 14.5px;
-  font-style: italic;
-  margin-top: 10px;
-  line-height: 1.5;
-}
-
-@media (max-width: 600px) {
-  .treatment-card img {
-    height: 140px;
-  }
-}
-
-/* Contact Section */
-.contact-section {
-  background-color: #1b3e2a;
-  color: #fff;
-  padding: 0;
-  font-family: 'Playfair Display', serif;
-}
-
-.contact-container {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-.contact-left {
-  flex: 1;
-  min-width: 300px;
-  max-width: 50%;
-}
-
-.contact-left img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.contact-right {
-  flex: 1;
-  padding: 60px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #1b3e2a;
-}
-
-.contact-right h2 {
-  font-size: 1.8rem;
-  margin-bottom: 40px;
-  color: #fff;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: column;
-  font-family: 'Poppins', sans-serif;
-  gap: 30px;
-}
-
-.info-block {
-  display: flex;
-  align-items: flex-start;
-  gap: 15px;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-.info-block i {
-  font-size: 1.2rem;
-  color: #bfa760;
-  min-width: 20px;
-  margin-top: 4px;
-}
-
-.btn-appointment {
-  display: inline-block;
-  margin-top: 20px;
-  background-color: #bfa760;
-  color: #1b3e2a;
-  padding: 8px 20px; 
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 14px; 
-  letter-spacing: 0.4px;
-  text-decoration: none;
-  transition: all 0.4s ease;
-  border: 2px solid transparent;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  width: fit-content;
-}
-
-.btn-appointment:hover {
-  background-color: #1b3e2a;
-  color: #bfa760;
-  border: 2px solid #bfa760;
-}
+/* MAP below */
+.contact-map .map-card{background:transparent;margin-top:6px}
+.map-frame{width:100%;height:420px;border-radius:10px;overflow:hidden;border:0;box-shadow:0 10px 30px rgba(27,62,42,0.06)}
+.map-note{color:var(--muted);font-size:13px;margin-top:10px;text-align:center}
 
 /* Footer */
 .footer {

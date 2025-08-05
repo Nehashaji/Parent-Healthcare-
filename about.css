@@ -423,117 +423,85 @@ body {
   }
 }
 
-/*Meet team*/
-.team-section {
-  background: #FFFFF0; 
-  padding: 80px 20px 40px; 
-  font-family: 'Poppins', sans-serif;
+.principles-section {
+  background-color: #f9f6f0;
+  padding: 80px 20px;
+  text-align: center;
   color: #1b3e2a;
 }
 
-.team-section .section-title {
+.principles-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
-  font-weight: 700;
-  text-align: center;
+  margin-bottom: 10px;
   color: #1b3e2a;
-  margin-bottom: 12px;
-  position: relative;
 }
 
-.team-section .section-title::after {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 5px;
-  background: #bfa760;
-  margin: 14px auto 0;
-  border-radius: 3px;
-}
-
-.team-section .section-subtitle {
-  font-family: 'Poppins', sans-serif; 
+.section-subtitle {
   font-size: 18px;
-  text-align: center;
-  color: #4e3b01;
-  max-width: 650px;
-  margin: 0 auto 60px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #5c5c5c;
 }
 
-.team-cards {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  flex-wrap: wrap;
+.principles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding: 0 10px;
 }
 
-.team-card {
-  background: #fff;
-  border-radius: 18px;
-  box-shadow: 0 12px 30px rgba(191, 167, 96, 0.15);
-  max-width: 300px;
-  width: 100%;
-  padding: 40px 30px 30px;
-  text-align: center;
-  cursor: default;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
+.principle-card {
+  background-color: #FFFFF0;
+  border: 1px solid #e4e0d8;
+  border-left: 5px solid #bfa760;
+  border-radius: 12px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
-.team-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 22px 55px rgba(191, 167, 96, 0.4);
+.principle-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-.team-photo {
-  width: 140px;
-  height: 140px;
-  margin: 0 auto 25px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid #bfa760;
-  box-shadow: 0 6px 15px rgba(191, 167, 96, 0.35);
-  transition: border-color 0.4s ease;
+.principle-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
 }
 
-.team-card:hover .team-photo {
-  border-color: #f7cd52;
-  box-shadow: 0 12px 25px rgba(247, 205, 82, 0.7);
-}
-
-.team-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.team-card h3 {
-  font-family: 'Playfair Display', serif;
+.principle-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
   color: #1b3e2a;
-  font-size: 24px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  margin-top: 0;
-  transition: color 0.3s ease;
+  font-family: 'Playfair Display', serif;
 }
 
-.team-card:hover h3 {
-  color: #bfa760;
+.principle-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-  .team-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .team-card {
-    max-width: 90%;
-    margin-bottom: 40px;
+@media (min-width: 768px) {
+  .principles-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (min-width: 1024px) {
+  .principles-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 
 /*insurance section*/
 .insurance-partners {

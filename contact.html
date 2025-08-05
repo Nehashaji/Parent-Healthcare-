@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Us — Parents Healthcare</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Parents Healthcare Logo" />
+    <span>Parents Healthcare</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="About.html">ABOUT US</a></li>
+    
+    <li class="dropdown">
+      <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="treatments.html">Our Treatments</a></li>
+        <li><a href="special.html">Special Treatments</a></li>
+        <li><a href="Packages.html">Special Packages</a></li>
+      </ul>
+    </li>
+    
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="overlay"></div>
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Your Wellness Journey Begins Here</h1>
+      <p>Reach out to our team for personalised Ayurvedic care, appointment bookings, and expert guidance — we’re here to make your healing experience seamless and comforting.</p>
+    </div>
+  </section>
+
+ <!-- MAIN CONTACT AREA - HORIZONTAL CARD + MAP BOTTOM -->
+  <main class="contact-main">
+    <div class="contact-top" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-out-cubic">
+      <!-- LEFT: Info column -->
+      <section class="contact-info">
+        <h2>Get in Touch</h2>
+        <p class="lead">Prefer a call? Send a message or choose a time and we’ll confirm your appointment.</p>
+
+        <div class="info-list">
+          <div class="info-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="info-text">
+              <h4>Address</h4>
+              <p>Near ADCB metro station, Exit No.1, First floor, Kanoo Building, Suite 103, Karama, Dubai, U.A.E</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fab fa-whatsapp"></i>
+            <div class="info-text">
+              <h4>WhatsApp</h4>
+              <p>+971 50 868 3125</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fas fa-envelope"></i>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p>info@parentshealthcare.ae</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fas fa-clock"></i>
+            <div class="info-text">
+              <h4>Opening Hours</h4>
+              <p>Daily — 9:00 AM to 9:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- quick contact actions -->
+        <div class="quick-actions">
+          <a href="tel:+971508683125" class="action-btn"><i class="fas fa-phone"></i> Call Now</a>
+          <a href="https://wa.me/971508683125" class="action-btn outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </section>
+
+      <!-- RIGHT: Form column -->
+      <section class="contact-form-wrap" aria-labelledby="contact-form-title" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="120" data-aos-easing="ease-out-cubic">
+        <div class="form-card">
+          <h2 id="contact-form-title">Send a Message</h2>
+
+          <form id="contactForm" action="#" method="post" novalidate>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="+971 5X XXX XXXX" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="service">Service of Interest</label>
+                <select id="service" name="service">
+                  <option value="">Select (optional)</option>
+                  <option>Doctor consultation</option>
+                  <option>Wellness treatment</option>
+                  <option>Package enquiry</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Mention any concerns, preferred dates or therapist preferences..."></textarea>
+              </div>
+            </div>
+
+            <div class="form-row submit-row">
+              <button type="submit" class="btn-primary" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">Send Message</button>
+              <div class="form-note">We’ll respond within 24 hours during business days.</div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- MAP: full width below the card -->
+    <div class="contact-map" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out-cubic">
+      <div class="map-card">
+        <h3>Our Location</h3>
+        <div class="map-frame">
+          <!-- You provided the Google Maps short link — use address-based embed for reliability -->
+          <iframe
+            src="https://www.google.com/maps?q=Near+ADCB+metro+station+Kanoo+building+Karama+Dubai+UAE&output=embed"
+            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p class="map-note">Tap or drag on the map to explore. Click the pin for directions.</p>
+      </div>
+    </div>
+  </main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo.png" alt="Parents Healthcare Logo" />
+      <p>Parents Healthcare</p>
+    </div>
+    <div class="footer-center">
+      <p>
+        © 2025 Parents Healthcare. All rights reserved.<br />
+        Powered by AyurMinar Kottakkal Ayurvedic Center
+      </p>
+    </div>
+    <div class="footer-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1400,
+      once: true,
+      easing: 'ease-in-out'
+    });
+
+    // Simple front-end form validation + friendly message (no backend)
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      if(!name || !email || !phone){
+        alert('Please complete your name, email and phone number before sending.');
+        return;
+      }
+      alert('Thank you — your message has been received. We will contact you shortly.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
