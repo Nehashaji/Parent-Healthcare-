@@ -19,26 +19,44 @@
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="Logo">
-      <span>Parents Healthcare</span>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">HOME</a></li>
-      <li><a href="About.html">ABOUT US</a></li>
-      <li class="dropdown">
-        <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
-        <ul class="dropdown-menu">
-          <li><a href="treatments.html">Our Treatments</a></li>
-          <li><a href="special.html">Special Treatments</a></li>
-          <li><a href="Packages.html">Special Packages</a></li>
-        </ul>
-      </li>
-      <li><a href="contact.html">CONTACT US</a></li>
-    </ul>
-  </nav>
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="logo.png" alt="Parents Healthcare Logo" />
+    <span>Parents Healthcare</span>
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="About.html">ABOUT US</a></li>
+
+    <!-- Dropdown for desktop -->
+    <li class="dropdown desktop-only">
+      <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="treatments.html">Our Treatments</a></li>
+        <li><a href="special.html">Special Treatments</a></li>
+        <li><a href="Packages.html">Special Packages</a></li>
+      </ul>
+    </li>
+
+    <!-- Direct links for mobile -->
+    <li class="mobile-only"><a href="treatments.html">OUR TREATMENTS</a></li>
+    <li class="mobile-only"><a href="special.html">OUR SPECIAL TREATMENTS</a></li>
+    <li class="mobile-only"><a href="Packages.html">OUR SPECIAL PACKAGES</a></li>
+
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+</nav>
+
 
   <!-- Hero Section -->
   <section class="about-hero">
@@ -179,6 +197,8 @@
   <script>
     AOS.init();
   </script>
+
+    <script src="home.js"></script>
 
 </body>
 </html>

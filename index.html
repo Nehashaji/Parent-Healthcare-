@@ -25,11 +25,21 @@
     <img src="logo.png" alt="Parents Healthcare Logo" />
     <span>Parents Healthcare</span>
   </div>
-  <ul class="nav-links">
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
     <li><a href="#">HOME</a></li>
     <li><a href="About.html">ABOUT US</a></li>
-    
-    <li class="dropdown">
+
+    <!-- Dropdown for desktop -->
+    <li class="dropdown desktop-only">
       <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
       <ul class="dropdown-menu">
         <li><a href="treatments.html">Our Treatments</a></li>
@@ -37,7 +47,12 @@
         <li><a href="Packages.html">Special Packages</a></li>
       </ul>
     </li>
-    
+
+    <!-- Direct links for mobile -->
+    <li class="mobile-only"><a href="treatments.html">OUR TREATMENTS</a></li>
+    <li class="mobile-only"><a href="special.html">OUR SPECIAL TREATMENTS</a></li>
+    <li class="mobile-only"><a href="Packages.html">OUR SPECIAL PACKAGES</a></li>
+
     <li><a href="contact.html">CONTACT US</a></li>
   </ul>
 </nav>
@@ -60,7 +75,7 @@
 
   <div class="hero-content" data-aos="fade-up">
     <h1>WELCOME TO <br><span>PARENTS HEALTHCARE</span></h1>
-    <p>Experience traditional healing in the comfort of your home with our qualified Ayurvedic doctors and authentic herbal treatments.</p>
+    <p>Where Healing Begins at Home , Experience the Harmony of Ayurveda and Homeopathy Delivered with Care.</p>
       <a 
     href="https://wa.me/971508683125?text=Hello%20Parents%20Healthcare%2C%20I%20would%20like%20to%20book%20an%20appointment."
     target="_blank"
@@ -103,7 +118,7 @@
                     <li>Platinum Plan</li>
                     <li>Postnatal Care</li>
                 </ul>
-                <a href="#" class="btn">VIEW MORE</a>
+                <a href="Packages.html" class="btn">VIEW MORE</a>
             </div>
         </div>
 
@@ -353,6 +368,8 @@
       once: true
     });
   </script>
+
+  <script src="home.js"></script>
 
 </body>
 </html>
