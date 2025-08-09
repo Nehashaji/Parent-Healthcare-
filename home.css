@@ -437,6 +437,42 @@ body {
     }
 }
 
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+  }
+
+  .about-text .btn {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}
+
 /* WHAT WE OFFER Section */
 .what-we-offer {
     text-align: center;
