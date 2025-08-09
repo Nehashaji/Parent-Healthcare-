@@ -617,6 +617,60 @@ body {
     transition: 0s;
 }
 
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .what-we-offer {
+    padding: 40px 16px 50px;
+  }
+
+  .what-we-offer h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .what-we-offer h2 span {
+    font-size: 28px;
+  }
+
+  .what-we-offer p {
+    font-size: 15px;
+    max-width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .offer-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .offer-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .offer-card img {
+    height: 180px;
+  }
+
+  .offer-card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .offer-card-content p,
+  .offer-card-content ul li {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 12px 24px;
+    border-radius: 25px;
+  }
+}
+
+
 /* HEALING JOURNEY SECTION */
 .journey-section {
   padding: 80px 30px;
