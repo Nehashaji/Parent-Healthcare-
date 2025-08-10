@@ -186,7 +186,7 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Hide mobile-specific links on desktop */
+/* Hides mobile-specific links on desktop */
 .mobile-only {
   display: none;
 }
@@ -669,7 +669,6 @@ body {
     border-radius: 25px;
   }
 }
-
 
 /* HEALING JOURNEY SECTION */
 .journey-section {

@@ -312,7 +312,7 @@ body{
 .contact-info{
   background:var(--card);
   border-radius:12px;
-  padding:20px;
+  padding:33px;
   box-shadow:0 10px 30px rgba(27,62,42,0.06);
   border:1px solid rgba(0,0,0,0.04);
 }
@@ -327,7 +327,7 @@ body{
 .info-text p{font-size:14px;color:var(--muted);margin:0}
 
 /* quick actions */
-.quick-actions{display:flex;gap:12px;margin-top:14px}
+.quick-actions{display:flex;gap:12px;margin-top:30px}
 .action-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:var(--deep);color:#fff;text-decoration:none;font-weight:600}
 .action-btn.outline{background:#fff;color:var(--deep);border:1px solid rgba(0,0,0,0.06)}
 
