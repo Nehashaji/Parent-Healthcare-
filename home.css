@@ -237,7 +237,7 @@ body {
     display: flex;
   }
 
-  /* Adjust navbar padding for mobile */
+  /* Adjusting navbar padding for mobile */
   .navbar {
     padding: 15px 20px;
   }

@@ -19,7 +19,6 @@ body{
   overflow-x:hidden;
 }
 
-
 /* Navbar */
 .navbar {
     display: flex;
@@ -36,21 +35,16 @@ body{
 .navbar .logo {
     display: flex;
     align-items: center;
-    gap: 14px;
 }
 
 .navbar .logo img {
-    width: 70px;
-    height: 60px;
+    height: 65px;
+    width: auto;  
+    max-width: 220px; 
 }
 
 .navbar .logo span {
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    font-weight: 700;
-    color: #1b3e2a;
-    text-transform: uppercase;
-    
+    display: none;
 }
 
 .nav-links {
@@ -179,7 +173,6 @@ body{
   border-radius: 2px;
   transition: all 0.4s ease;
 }
-/* Hamburger → X animation */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -190,7 +183,7 @@ body{
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Hide mobile-specific links on desktop */
+/* Hides mobile-specific links on desktop */
 .mobile-only {
   display: none;
 }
@@ -230,12 +223,11 @@ body{
     right: 0;
   }
 
-  /* Mobile hover effect */
   .nav-links li a {
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
-    font-family: 'poppins ', serif;
+    font-family: 'poppins', serif;
     transition: color 0.3s ease, transform 0.3s ease;
   }
   .nav-links li a:hover {
@@ -248,9 +240,15 @@ body{
     display: flex;
   }
 
-  /* Adjust navbar padding for mobile */
+  /* Adjusting navbar padding for mobile */
   .navbar {
     padding: 15px 20px;
+  }
+
+  /* Logo adjustment for mobile */
+  .navbar .logo img {
+    height: 55px;
+    max-width: 180px;
   }
 }
 
