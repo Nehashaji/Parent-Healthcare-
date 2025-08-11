@@ -249,29 +249,50 @@ body {
   }
 }
 
-.language-switcher {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.lang-btn {
-  padding: 8px 14px;
-  border: none;
-  background-color: #1b3e2a;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
+/* Google Translate dropdown container */
+#google_translate_element {
+  margin-left: 15px;
+  font-family: 'Poppins', sans-serif;
   font-size: 14px;
-  transition: background 0.3s ease;
 }
 
-.lang-btn.active {
-  background-color: #bfa760;
+/* Style the Google Translate dropdown (select) */
+.goog-te-combo {
+  border: 2px solid #1b3e2a !important;
+  border-radius: 5px !important;
+  padding: 6px 12px !important;
+  background: #FFFFF0 !important;
+  color: #1b3e2a !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 14px !important;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
-.lang-btn:hover {
-  opacity: 0.9;
+/* Hover effect on dropdown */
+.goog-te-combo:hover {
+  border-color: #bfa760 !important;
+  color: #bfa760 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #google_translate_element {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+/* RTL language support */
+html[lang="ar"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="en"] body {
+  direction: ltr;
+  text-align: left;
 }
 
 /* Hero Section with video */
@@ -938,7 +959,6 @@ body {
   position: relative;
 }
 
-
 .insurance-partners h2 {
   font-size: 2.5rem;
   font-family: 'Playfair Display', serif;
@@ -971,12 +991,14 @@ body {
   padding: 0 30px;
 }
 
+/* Default LTR scroll-track */
 .scroll-track {
   display: flex;
   gap: 50px;
   animation: scrollLeft 45s linear infinite;
   width: max-content;
   padding: 10px 0;
+  flex-direction: row;
 }
 
 .scroll-track img {
@@ -993,12 +1015,29 @@ body {
   filter: brightness(1.1); 
 }
 
+/* RTL adjustments */
+html[lang="ar"] .scroll-track {
+  flex-direction: row-reverse;
+  animation: scrollRight 45s linear infinite;
+}
+
+/* Keyframes for LTR */
 @keyframes scrollLeft {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* Keyframes for RTL */
+@keyframes scrollRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50%);
   }
 }
 
@@ -1019,6 +1058,7 @@ body {
     font-size: 1rem;
   }
 }
+
 
 /* Contact Section */
 .contact-section {
