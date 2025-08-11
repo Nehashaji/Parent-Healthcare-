@@ -249,6 +249,31 @@ body {
   }
 }
 
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lang-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #1b3e2a;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.lang-btn.active {
+  background-color: #bfa760;
+}
+
+.lang-btn:hover {
+  opacity: 0.9;
+}
+
 /* Hero Section with video */
 .hero {
     position: relative;
