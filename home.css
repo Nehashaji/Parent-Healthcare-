@@ -372,7 +372,6 @@ html[lang="en"] body {
     border: 2px solid #034c1b;
 }
 
-
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .hero {
@@ -1284,6 +1283,7 @@ html[lang="ar"] .scroll-track {
     max-height: 45px;
   }
 }
+
 html[lang="ar"] body,
 html[lang="ar"] .footer,
 html[lang="ar"] footer {
@@ -1293,7 +1293,6 @@ html[lang="ar"] footer {
 }
 
 html[lang="ar"] footer {
-  /* if you use fixed/absolute positioning, check left/right */
   left: auto !important;
   right: 0 !important;
 }
