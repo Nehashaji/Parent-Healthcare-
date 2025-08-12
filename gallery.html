@@ -8,6 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,6 @@
 <!-- Navbar -->
 <nav class="navbar">
   <div class="logo">
-    <!-- Replace with your combined logo image -->
     <img src="logo1.png" alt="Parents Healthcare Logo and Tagline" />
   </div>
 
@@ -70,33 +70,33 @@
 </script>
 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
-  <!-- Hero Section -->
-  <section class="about-hero">
-    <div class="overlay"></div>
-    <div class="hero-text" data-aos="fade-up">
-      <h1>Parents Healthcare Gallery</h1>
-      <p>Explore our visual journey — a glimpse into the serene spaces, healing moments, and timeless traditions that define our Ayurvedic care.</p>
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="about-hero" >
+  <div class="overlay"></div>
+  <div class="hero-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <h1>Parents Healthcare Gallery</h1>
+    <p>Explore our visual journey — a glimpse into the serene spaces, healing moments, and timeless traditions that define our Ayurvedic care.</p>
+  </div>
+</section>
 
 <!-- Gallery Section -->
-<section class="gallery-section">
+<section class="gallery-section" data-aos="fade" data-aos-duration="1500" data-aos-easing="ease-out-cubic" data-aos-offset="200">
   <div class="gallery">
     <!-- 9 Images -->
-    <div class="gallery-item"><img src="gallery/Herbal.jpeg" alt="Clinic Interior"></div>
-    <div class="gallery-item"><img src="gallery/Ayurvedic.jpg" alt="Therapy Room"></div>
-    <div class="gallery-item"><img src="gallery/Massage-Session.jpeg" alt="Herbal Treatments"></div>
-    <div class="gallery-item"><img src="gallery/reception.jpeg" alt="Reception Area"></div>
-    <div class="gallery-item"><img src="gallery/Relaxation.jpeg" alt="Ayurvedic Oils"></div>
-    <div class="gallery-item"><img src="gallery/reception.jpeg" alt="Consultation Room"></div>
-    <div class="gallery-item"><img src="gallery/treatment_room.jpg" alt="Massage Therapy"></div>
-    <div class="gallery-item"><img src="gallery/Herbal.jpeg" alt="Wellness Hallway"></div>
-    <div class="gallery-item"><img src="gallery/Ayurvedic.jpg" alt="Natural Healing"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image1.jpg" alt="Image 1"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image2.jpg" alt="Image 2"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image3.jpg" alt="Image 3"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image4.jpg" alt="Image 4"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image5.jpg" alt="Image 5"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image6.jpg" alt="Image 6"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image7.jpg" alt="Image 7"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image8.jpg" alt="Image 8"></div>
+    <div class="gallery-item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800" data-aos-easing="ease-out-cubic"><img src="gallery/image9.jpg" alt="Image 9"></div>
   </div>
 </section>
 
 <!-- Lightbox Container -->
-<div id="lightbox" class="lightbox">
+<div id="lightbox" class="lightbox" data-aos="fade" data-aos-duration="900" data-aos-easing="ease-out-cubic" data-aos-delay="100">
   <span class="close">&times;</span>
   <img id="lightbox-img" src="" alt="Full View">
 </div>
@@ -220,6 +220,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    // You can customize options here
+    duration: 1000, // global animation duration
+    easing: 'ease-in-out',
+    once: true, // whether animation should happen only once - while scrolling down
+  });
 </script>
 
 
