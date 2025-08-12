@@ -84,5 +84,31 @@ window.addEventListener('load', () => {
   updateLangButtons(initialLang);
 
   // Sync buttons with dropdown changes
-  setTimeout(syncButtonsWithDropdown, 2000); // delay to allow Google Translate to load
+  setTimeout(syncButtonsWithDropdown, 2000); 
 });
+
+//Gallery page 
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".gallery-card img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox .close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+});
+

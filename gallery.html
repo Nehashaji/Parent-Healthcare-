@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinic Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <!-- Replace with your combined logo image -->
+    <img src="logo1.png" alt="Parents Healthcare Logo and Tagline" />
+  </div>
+
+  <!-- Hamburger Icon -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Navigation Links -->
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="About.html">ABOUT US</a></li>
+    <li><a href="gallery.html">GALLERY</a></li>
+
+
+    <!-- Dropdown for desktop -->
+    <li class="dropdown desktop-only">
+      <a href="#">WHAT WE OFFER <i class="fas fa-chevron-down"></i></a>
+      <ul class="dropdown-menu">
+        <li><a href="treatments.html">Our Treatments</a></li>
+        <li><a href="special.html">Special Treatments</a></li>
+        <li><a href="Packages.html">Special Packages</a></li>
+      </ul>
+    </li>
+
+    <!-- Direct links for mobile -->
+    <li class="mobile-only"><a href="treatments.html">OUR TREATMENTS</a></li>
+    <li class="mobile-only"><a href="special.html">OUR SPECIAL TREATMENTS</a></li>
+    <li class="mobile-only"><a href="Packages.html">OUR SPECIAL PACKAGES</a></li>
+
+    <li><a href="contact.html">CONTACT US</a></li>
+  </ul>
+
+  <!-- Google Translate Widget -->
+  <div id="google_translate_element"></div>
+</nav>
+
+<!-- Google Translate API -->
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        includedLanguages: 'ar,en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Hero Section -->
+  <section class="about-hero">
+    <div class="overlay"></div>
+    <div class="hero-text" data-aos="fade-up">
+      <h1>Parents Healthcare Gallery</h1>
+      <p>Explore our visual journey — a glimpse into the serene spaces, healing moments, and timeless traditions that define our Ayurvedic care.</p>
+    </div>
+  </section>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <div class="gallery">
+    <!-- 9 Images -->
+    <div class="gallery-item"><img src="gallery/Herbal.jpeg" alt="Clinic Interior"></div>
+    <div class="gallery-item"><img src="gallery/Ayurvedic.jpg" alt="Therapy Room"></div>
+    <div class="gallery-item"><img src="gallery/Massage-Session.jpeg" alt="Herbal Treatments"></div>
+    <div class="gallery-item"><img src="gallery/reception.jpeg" alt="Reception Area"></div>
+    <div class="gallery-item"><img src="gallery/Relaxation.jpeg" alt="Ayurvedic Oils"></div>
+    <div class="gallery-item"><img src="gallery/reception.jpeg" alt="Consultation Room"></div>
+    <div class="gallery-item"><img src="gallery/treatment_room.jpg" alt="Massage Therapy"></div>
+    <div class="gallery-item"><img src="gallery/Herbal.jpeg" alt="Wellness Hallway"></div>
+    <div class="gallery-item"><img src="gallery/Ayurvedic.jpg" alt="Natural Healing"></div>
+  </div>
+</section>
+
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img id="lightbox-img" src="" alt="Full View">
+</div>
+
+<!--insurance section-->
+<section class="insurance-partners" data-aos="fade-up">
+  <h2 data-aos="fade-up" data-aos-delay="200"><span class="green">INSURANCE</span> <span class="orange">PARTNERS</span></h2>
+  <p class="subtitle" data-aos="fade-up" data-aos-delay="300">We Accept All Insurance Cards</p>
+
+  <div class="insurance-scroll" data-aos="fade-left" data-aos-delay="400">
+    <div class="scroll-track">
+      <img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1" />
+      <img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2" />
+      <img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3" />
+      <img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4" />
+      <img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5" />
+      <img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6" />
+      <img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7" />
+      <img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8" />
+      <img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9" />
+      <img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10" />
+      <img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1" />
+      <img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2" />
+      <img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3" />
+      <img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4" />
+      <img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5" />
+      <img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6" />
+      <img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7" />
+      <img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8" />
+      <img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9" />
+      <img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10" />
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <img src="HomePage/contactimage.jpg" alt="Ayurvedic background" />
+    </div>
+
+    <div class="contact-right">
+      <h2>
+        Just Make an Appointment & You're Done!
+      </h2>
+
+      <div class="contact-info">
+        <div class="info-block">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>
+            Near Sheikh Mohammed Bin Salem Road, Ras Al Khaimah, United Arab Emirates
+          </p>
+        </div>
+
+        <div class="info-block">
+          <i class="fab fa-whatsapp"></i>
+          <p>+971 50 868 3125</p>
+        </div>
+
+        <div class="info-block">
+          <i class="fas fa-clock"></i>
+          <p>Daily: 9:00 AM - 9:00 PM</p>
+        </div>
+
+        <a 
+          href="https://wa.me/971508683125?text=Hello%20Parents%20Healthcare%2C%20I%20would%20like%20to%20book%20an%20appointment."
+          target="_blank" 
+          rel="noopener" 
+          class="btn-appointment">
+          💬 Have Questions? Let’s Chat
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <img src="logo1.png" alt="Parents Healthcare Logo with Tagline" class="footer-logo" />
+    </div>
+    <div class="footer-center">
+      <p>
+        © 2025 Parents Healthcare. All rights reserved.<br />
+        Powered by AyurMinar Kottakkal Ayurvedic Center
+      </p>
+    </div>
+    <div class="footer-right">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".gallery-item img");
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightbox-img");
+  const closeBtn = document.querySelector(".lightbox .close");
+
+  images.forEach(img => {
+    img.addEventListener("click", () => {
+      lightbox.style.display = "flex";
+      lightboxImg.src = img.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+});
+</script>
+
+
+</body>
+</html>

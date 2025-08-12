@@ -284,18 +284,6 @@ body {
   }
 }
 
-/* RTL language support */
-html[lang="ar"] body {
-  direction: rtl;
-  text-align: right;
-}
-
-html[lang="en"] body {
-  direction: ltr;
-  text-align: left;
-}
-
-
 /* Hero Section */
 .about-hero {
   background: url('Images/treatment.png') center/cover no-repeat;
@@ -740,15 +728,6 @@ html[lang="en"] body {
   }
 }
 
-html[lang="ar"] body,
-html[lang="ar"] .footer,
-html[lang="ar"] footer {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
-  overflow-x: hidden;
-}
-
-html[lang="ar"] footer {
-  left: auto !important;
-  right: 0 !important;
+body > :not(.footer) {
+  flex: 1;
 }
