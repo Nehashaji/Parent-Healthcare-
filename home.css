@@ -696,6 +696,15 @@ body {
   line-height: 1.7;
 }
 
+.section-title::after,
+.section-title::before {
+  content: none !important;
+}
+
+.section-title {
+  border-bottom: none !important;
+}
+
 /* Vertical timeline container */
 .journey-visual {
   position: relative;
@@ -797,7 +806,7 @@ body {
   text-align: center;
   font-family: 'Playfair Display', serif;
   padding: 50px 20px;
-  background-color: #fdfaf4;
+  background-color: #FFFFF0;
 }
 
 .why-choose-us h2 {
@@ -902,6 +911,95 @@ body {
   .align-right {
     align-items: center !important;
     text-align: center !important;
+  }
+}
+
+.ceo-message {
+  background: #FFFFF0;
+  padding: 80px 20px;
+}
+
+.ceo-message .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.ceo-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #bfa760;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.ceo-text {
+  max-width: 600px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #1b3e2a;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #bfa760;
+  margin-top: 8px;
+  border-radius: 2px;
+}
+
+.quote {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #473102;;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.ceo-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #1b3e2a;
+}
+
+.ceo-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .ceo-message .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .ceo-image img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1rem;
   }
 }
 
@@ -1011,7 +1109,6 @@ html[lang="ar"] .scroll-track {
     font-size: 1rem;
   }
 }
-
 
 /* Contact Section */
 .contact-section {
