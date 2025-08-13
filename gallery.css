@@ -237,7 +237,6 @@ body {
     display: flex;
   }
 
-  /* Adjusting navbar padding for mobile */
   .navbar {
     padding: 15px 20px;
   }
@@ -248,7 +247,6 @@ body {
     max-width: 180px;
   }
 }
-
 
 /* Hero Section */
 .about-hero {
@@ -393,98 +391,6 @@ body {
 
   .hero-text p {
     font-size: 16px;
-  }
-}
-
-
-/*insurance section*/
-.insurance-partners {
-  text-align: center;
-  padding: 40px 20px 80px;
-  border-radius: 12px;
-  background-color: #fffff0;
-  position: relative;
-}
-
-
-.insurance-partners h2 {
-  font-size: 2.5rem;
-  font-family: 'Playfair Display', serif;
-  font-weight: bold;
-  color: #1b3e2a;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
-}
-
-.insurance-partners .green {
-  color: #1b3e2a;
-}
-
-.insurance-partners .orange {
-  color:#bfa760; 
-}
-
-.insurance-partners .subtitle {
-  font-size: 1.2rem;
-  font-family: 'Poppins', sans-serif;
-  color: #4e3b01;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-}
-
-.insurance-scroll {
-  overflow: hidden;
-  position: relative;
-  max-width: 100%;
-  padding: 0 30px;
-}
-
-.scroll-track {
-  display: flex;
-  gap: 50px;
-  animation: scrollLeft 45s linear infinite;
-  width: max-content;
-  padding: 10px 0;
-}
-
-.scroll-track img {
-  height: 70px;
-  width: auto;
-  object-fit: contain;
-  filter: none; 
-  transition: transform 0.3s ease, filter 0.3s ease;
-  border-radius: 8px; 
-}
-
-.scroll-track img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.1); 
-}
-
-@keyframes scrollLeft {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 768px) {
-  .scroll-track {
-    gap: 20px;
-  }
-
-  .scroll-track img {
-    height: 50px;
-  }
-
-  .insurance-partners h2 {
-    font-size: 2.2rem;
-  }
-
-  .insurance-partners .subtitle {
-    font-size: 1rem;
   }
 }
 

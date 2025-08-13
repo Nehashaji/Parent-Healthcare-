@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -175,34 +176,48 @@
   </div>
 </section>
 
-<!--insurance section-->
-<section class="insurance-partners" data-aos="fade-up">
+<!-- Our Doctor Section -->
+<section class="doctor-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-down" data-aos-duration="800">Meet Our Expert Doctor</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Where Healing Meets Excellence</p>
+
+    <div class="doctor-profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+      <div class="doctor-image">
+        <img src="Images/doc.jpg" alt="Dr. Anjali Sharma" />
+      </div>
+      <div class="doctor-details">
+        <h3>Dr. Anjali Sharma</h3>
+        <p class="specialty">Ayurvedic Specialist</p>
+        <p class="description">
+          With over 15 years of experience, Dr. Sharma combines traditional Panchakarma therapies with personalized holistic wellness plans. She is deeply committed to guiding each patient on a transformative journey toward balance, health, and vitality.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Insurance Partners Section -->
+<section class="insurance-partners">
   <h2 data-aos="fade-up" data-aos-delay="200"><span class="green">INSURANCE</span> <span class="orange">PARTNERS</span></h2>
   <p class="subtitle" data-aos="fade-up" data-aos-delay="300">We Accept All Insurance Cards</p>
-
-  <div class="insurance-scroll" data-aos="fade-left" data-aos-delay="400">
-    <div class="scroll-track">
-      <img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1" />
-      <img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2" />
-      <img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3" />
-      <img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4" />
-      <img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5" />
-      <img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6" />
-      <img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7" />
-      <img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8" />
-      <img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9" />
-      <img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10" />
-      <img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1" />
-      <img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2" />
-      <img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3" />
-      <img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4" />
-      <img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5" />
-      <img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6" />
-      <img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7" />
-      <img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8" />
-      <img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9" />
-      <img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10" />
+  <div class="swiper insurance-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-1.jpg" alt="Insurance 1"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-2.jpg" alt="Insurance 2"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-3.jpg" alt="Insurance 3"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-4.jpg" alt="Insurance 4"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-5.jpg" alt="Insurance 5"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-6.jpg" alt="Insurance 6"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-7.jpg" alt="Insurance 7"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-8.jpg" alt="Insurance 8"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-9.jpg" alt="Insurance 9"></div>
+      <div class="swiper-slide"><img src="HomePage/Insurance image/Insurance-10.jpg" alt="Insurance 10"></div>
     </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 </section>
 
@@ -276,6 +291,32 @@
   </script>
 
   <script src="home.js"></script>
+
+  <!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+const insuranceSwiper = new Swiper('.insurance-swiper', {
+  slidesPerView: 5,
+  spaceBetween: 8,
+  loop: true,
+  rtl: document.documentElement.dir === "rtl", 
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    0: { slidesPerView: 2, spaceBetween: 5 },
+    480: { slidesPerView: 3, spaceBetween: 6 },
+    768: { slidesPerView: 4, spaceBetween: 7 },
+    1024: { slidesPerView: 5, spaceBetween: 8 },
+  },
+  speed: 700
+});
+</script>
 
 </body>
 </html>

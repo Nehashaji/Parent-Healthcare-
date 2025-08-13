@@ -436,7 +436,7 @@ body {
   }
   
   .treatment-cards {
-    grid-template-columns: 1fr; /* Single column */
+    grid-template-columns: 1fr; 
     gap: 20px;
   }
   
