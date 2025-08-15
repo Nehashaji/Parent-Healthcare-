@@ -364,7 +364,7 @@ body {
   background: #fff;
   border-radius: 25px;
   box-shadow: 0 15px 30px rgba(27, 62, 42, 0.15);
-  padding: 30px 25px 35px;
+  padding: 30px 25px 15px;
   border: 2px solid #bfa760;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   display: flex;
